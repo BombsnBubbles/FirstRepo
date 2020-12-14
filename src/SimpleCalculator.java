@@ -1,3 +1,4 @@
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -43,7 +44,7 @@ public class SimpleCalculator extends JFrame implements ActionListener{
 		labelResult = new JLabel("Result: ");
 		
 		panel = new JPanel();
-		
+		panel.setLayout(new GridLayout(5,2));
 		panel.add(labelNum1);
 		panel.add(textfld1);
 		panel.add(labelNum2);
